@@ -1,0 +1,375 @@
+<!DOCTYPE HTML>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Immersive Spaces</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+            <style>
+            #panorama {
+                width: 1200px;
+                height: 800px;
+            }
+            </style>
+        </head>
+        <body style="background-color: black;"><br><center>
+        
+        <div id="panorama"></div>
+        <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const pano = urlParams.get('pano')
+        pannellum.viewer('panorama', {   
+    "default": {
+        "firstScene": "west5",
+        // "author": "Matthew Petroff",
+        "sceneFadeDuration": 1000,
+        "type": "equirectangular",
+        "hotSpotDebug": true,
+        // "pitch": -45,
+        "showZoomCtrl": false,
+        "keyboardZoom": false,
+        "mouseZoom": false,
+        // "hfov": 110,
+        "hfov": 100,
+    },
+
+    "scenes": {
+        "center": {
+            "title": "Central point",
+            "pitch": -2,
+            "yaw": 0,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_44.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 0,
+                    "targetPitch": -2,
+                    "targetYaw": 0,
+                    "type": "scene",
+                    "text": "Go North",
+                    "sceneId": "north"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 179,
+                    "targetPitch": -2,
+                    "targetYaw": 179,
+                    "type": "scene",
+                    "text": "Go South",
+                    "sceneId": "south"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "east"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "west"
+                },
+            ]
+        },
+        "north": {
+            "title": "Northern point",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_34.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "cell35"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 179,
+                    "targetPitch": -2,
+                    "targetYaw": 179,
+                    "type": "scene",
+                    "text": "Go South",
+                    "sceneId": "center"
+                }
+            ]
+        },
+        "south": {
+            "title": "Southern point",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_54.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "cell55"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 0,
+                    "targetPitch": -2,
+                    "targetYaw": 0,
+                    "type": "scene",
+                    "text": "Go North",
+                    "sceneId": "center"
+                }
+            ]
+        },
+        "cell55": {
+            "title": "South-Western point",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_55.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "south"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 0,
+                    "targetPitch": -2,
+                    "targetYaw": 0,
+                    "type": "scene",
+                    "text": "Go North",
+                    "sceneId": "west"
+                }
+            ]
+        },           
+        "cell35": {
+            "title": "North-Western point",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_35.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "north"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 179,
+                    "targetPitch": -2,
+                    "targetYaw": 179,
+                    "type": "scene",
+                    "text": "Go South",
+                    "sceneId": "west"
+                }
+            ]
+        },        
+        "west": {
+            "title": "Western point",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_45.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 0,
+                    "targetPitch": -2,
+                    "targetYaw": 0,
+                    "type": "scene",
+                    "text": "Go North",
+                    "sceneId": "cell35"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 179,
+                    "targetPitch": -2,
+                    "targetYaw": 179,
+                    "type": "scene",
+                    "text": "Go South",
+                    "sceneId": "cell55"
+                },                
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "west2"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "center"
+                }
+            ]
+        },
+        "east": {
+            "title": "Eastern point",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_43.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "center"
+                }
+            ]
+        },
+
+        "west2": {
+            "title": "Beginning of the road to the west",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_46.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "west3"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "west"
+                }
+            ]
+        },
+
+        "west3": {
+            "title": "On the road to the west",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_47.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "west4"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "west2"
+                }
+            ]
+        },
+
+        "west4": {
+            "title": "End of the road to the west",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_48.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 269,
+                    "targetPitch": -2,
+                    "targetYaw": 269,
+                    "type": "scene",
+                    "text": "Go West",
+                    "sceneId": "west5"
+                },
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "west3"
+                }
+            ]
+        },
+
+        "west5": {
+            "title": "West Deadend",
+            "pitch": -2,
+            // "hfov": 110,
+            // "yaw": 5,
+            "yaw": 89,
+            "type": "equirectangular",
+            "panorama": "crystals2_cell_49.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -2,
+                    "yaw": 89,
+                    "targetPitch": -2,
+                    "targetYaw": 89,
+                    "type": "scene",
+                    "text": "Go East",
+                    "sceneId": "west4"
+                }
+            ]
+        },
+
+    }
+});
+        </script>
+</center>
+</body>
+</html>
