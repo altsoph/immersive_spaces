@@ -1,12 +1,11 @@
-# immersive_spaces
-
 ## TLDR
 
 I am foo
 
-[I am link](zork/index.html)
+## Demo spaces
 
-[I am link 2](crystals/index.html)
+  * [I am link](zork/index.html)
+  * [I am link 2](crystals/index.html)
 
 ## Abstract
 
