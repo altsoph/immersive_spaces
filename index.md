@@ -1,5 +1,7 @@
 ## TLDR
 
+<img src="/immersive_spaces/imsp_logo.png" align="right" width="200px"/>
+
 I am foo
 
 ## Demo spaces
