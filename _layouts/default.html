@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--shrink-to-fit=no"-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     {% include head-custom.html %}
 
-{% seo %}
+    <meta name="author" content="altsoph">
+    <meta name="twitter:creator" content="@altsoph" />
+    <meta property="og:site_name" content="altsoph.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="article" />
+    <!--meta property="telegram_channel" content="pathetic_low_frequenciers_eng"-->
+    <meta name="content_filter" content="global" />
+
+<!-- #### -->
+    <meta name="keywords" content="ai, generated, interactive, 3d, space, neural network, nlg, animation, art" />
+    <meta property="og:title" content="AI generated interactive navigable 3D spaces" />
+    <meta name="twitter:title" content="AI generated interactive navigable 3D spaces" />
+    <meta name="description" content="AI generated interactive navigable 3D spaces">
+    <meta property="og:description" content="AI generated interactive navigable 3D spaces" />
+    <meta name="twitter:description" content="AI generated interactive navigable 3D spaces" />
+
+    <meta property="og:url" content="https://altsoph.github.io/immersive_spaces/" />
+    <meta property="og:image" content="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_000607_o3.gif?raw=true" />
+    <meta name="twitter:image" content="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_000607_o3.gif?raw=true" />
+    <link href='https://github.com/altsoph/immersive_spaces/blob/main/imgs/_000607_o3.gif?raw=true' rel='thumbnail' title='AI generated interactive navigable 3D spaces' type='image/gif'>
+
+<!--{--% seo %--}-->
   </head>
 
   <body>
@@ -24,7 +45,7 @@
             <a href="{{ site.github.tar_url }}" class="btn">Download as .tar.gz</a>
           {% endif %}
           <a href="{{ site.github.repository_url }}" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section -->>
+        </section -->
       </div>
     </header>
 

@@ -14,4 +14,4 @@ We then process the projection by applying 3D transformation to generate an imag
 
 <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_000607_o3.gif?raw=true" alt="twisted passages, all alike" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_221253_o3.gif?raw=true" alt="emerald cave with golems" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_221414_o3.gif?raw=true" alt="hedgehog in the fog" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_223927_o3.gif?raw=true" alt="night city maze" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_224117_o3.gif?raw=true" alt="server room maze" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_224256_o3.gif?raw=true" alt="magic mushroom forest" />
 
-&copy;[altsoph](https://altsoph.com), 2023
+&copy;&nbsp;[altsoph](https://altsoph.com), 2023
