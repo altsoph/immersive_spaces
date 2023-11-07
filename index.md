@@ -4,7 +4,7 @@ This page contains supplementary demos for our paper [Unrolling Virtual Worlds f
 
 We explore the generation of navigable 3D worlds using the combination of modern neural networks and specific geometric transformations to achieve interactive, locally coherent worlds.
 
-First, we utilize the [fine-tuned](https://civitai.com/models/10753/latentlabs360) [StableDiffusion v1.5 model](https://huggingface.co/runwayml/stable-diffusion-v1-5) to generate panoramas in equirectangular projection.
+First, we utilize the fine-tuned [StableDiffusion v1.5 model](https://huggingface.co/runwayml/stable-diffusion-v1-5) to generate panoramas in equirectangular projection, similar to [BlockadeLabs](https://www.blockadelabs.com/) and [latentlabs360](https://civitai.com/models/10753/latentlabs360).
 We then process the projection by applying 3D transformation to generate an image corresponding to the projection from another point in the same space. Finally, after obtaining the distorted projection, we remove this distortion by running the image through the model again, using a technique similar to the "in-painting." The network tends to "reconstruct" inputs, thereby enhancing their likelihood, grounding various noisy or distorted objects onto this manifold and projecting them to the nearest suitable region (Read more details in the [paper](#)). By repetition of these three steps, we are able to construct interactive, locally coherent worlds, similar to the infamous [Myst](https://en.wikipedia.org/wiki/Myst) game or Google Street View interface. To render these interactive spaces, we use an open-source library called [Pannellum](https://pannellum.org/).
 
 ## Interactive Demo Spaces
