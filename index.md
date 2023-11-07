@@ -15,5 +15,5 @@ I am bar
 
 ## Some screencasts
 
-<img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_000607_o3.gif" alt="twisted passages" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_221253_o3.gif" alt="emerald cave with golems" /> <img src="/immersive_spaces/imgs/_221414_o3.gif" alt="hedgehog in the fog" /> <img src="/immersive_spaces/imgs/_223927_o3.gif" alt="night city maze" /> <img src="/immersive_spaces/imgs/_224117_o3.gif" alt="server room maze" /> <img src="/immersive_spaces/imgs/_224256_o3.gif" alt="magic mushroom forest" />
+<img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_000607_o3.gif?raw=true" alt="twisted passages" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_221253_o3.gif?raw=true" alt="emerald cave with golems" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_221414_o3.gif" alt="hedgehog in the fog" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_223927_o3.gif?raw=true" alt="night city maze" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_224117_o3.gif?raw=true" alt="server room maze" /> <img src="https://github.com/altsoph/immersive_spaces/blob/main/imgs/_224256_o3.gif?raw=true" alt="magic mushroom forest" />
 
