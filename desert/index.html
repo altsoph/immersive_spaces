@@ -1,38 +1,77 @@
-<!DOCTYPE HTML>
-        <html>
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Immersive Spaces</title>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
-            <style>
-            #panorama {
-                width: 1200px;
-                height: 800px;
-            }
-            </style>
-        </head>
-        <body style="background-color: black;"><br><center>
-        
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--shrink-to-fit=no"-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/immersive_spaces/assets/css/style.css?v=4815844171ef70805532c9594517ba6ce083af51">
+    <!--link rel="shortcut icon" type="image/x-icon" href="/immersive_spaces/favicon.ico"-->
+    <link rel="icon" type="image/png" href="/immersive_spaces/imgs/logo_sm.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <style>
+    #panorama {
+        width: 1200px;
+        height: 800px;
+    }
+    </style>
+
+    <title>Immersive Spaces / Sand desert</title>
+    <meta name="author" content="altsoph">
+    <meta name="twitter:creator" content="@altsoph" />
+    <meta property="og:site_name" content="altsoph.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:type" content="article" />
+    <!--meta property="telegram_channel" content="pathetic_low_frequenciers_eng"-->
+    <meta name="content_filter" content="global" />
+
+<!-- #### -->
+    <meta name="keywords" content="ai, generated, interactive, 3d, space, neural network, nlg, animation, art, Sand desert" />
+    <meta property="og:title" content="AI generated interactive navigable 3D spaces: Sand desert" />
+    <meta name="twitter:title" content="AI generated interactive navigable 3D spaces: Sand desert" />
+    <meta name="description" content="An outdoor desert landscape, with large sand dunes and jagged rocks">
+    <meta property="og:description" content="An outdoor desert landscape, with large sand dunes and jagged rocks" />
+    <meta name="twitter:description" content="An outdoor desert landscape, with large sand dunes and jagged rocks" />
+
+    <meta property="og:url" content="https://altsoph.github.io/immersive_spaces/" />
+    <meta property="og:image" content="https://altsoph.com/stuff/imgs/_desert_thumb.png" />
+    <meta name="twitter:image" content="https://altsoph.com/stuff/imgs/_desert_thumb.png" />
+    <link href='https://altsoph.com/stuff/imgs/_desert_thumb.png' rel='thumbnail' title='AI generated interactive navigable 3D spaces: Sand desert' type='image/png'>
+
+<!--{--% seo %--}-->
+  </head>
+
+  <body style="background-color: black;">
+
+    <header>
+      <div class="container">
+          <h1><a href="/immersive_spaces/">Immersive Spaces</a> / Sand desert</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+
+      <br><center>
+
         <div id="panorama"></div>
         <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const pano = urlParams.get('pano')
         pannellum.viewer('panorama', {   
+
     "default": {
-        "firstScene": "west5",
-        // "author": "Matthew Petroff",
-        "sceneFadeDuration": 1000,
+        "firstScene": "center",
+        "sceneFadeDuration": 0,
         "type": "equirectangular",
-        "hotSpotDebug": true,
-        // "pitch": -45,
         "showZoomCtrl": false,
         "keyboardZoom": false,
         "mouseZoom": false,
-        // "hfov": 110,
+        "autoLoad": true,
+        "hfov": 110,
     },
+
 
     "scenes": {
         "center": {
