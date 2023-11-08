@@ -7,7 +7,7 @@ We then process the projection by applying 3D transformation to generate an imag
 ## Interactive Demo Spaces
 
   * [*a maze of twisty little passages, all alike*](zork/index.html)
-  * [*a dark, mysterious room filled with bright, glowing green crystals and large, looming statues*](crystals/index.html)
+  * [*a dark, mysterious cave filled with bright, glowing green crystals and large, looming statues*](crystals/index.html)
   * [*an outdoor desert landscape, with large sand dunes and jagged rocks*](desert/index.html)  
 
 ## Some screencasts
