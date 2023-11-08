@@ -96,17 +96,15 @@
         const urlParams = new URLSearchParams(queryString);
         const pano = urlParams.get('pano')
         pannellum.viewer('panorama', {   
+
     "default": {
-        "firstScene": "west5",
-        // "author": "Matthew Petroff",
-        "sceneFadeDuration": 1000,
+        "firstScene": "center",
+        "sceneFadeDuration": 0,
         "type": "equirectangular",
-        "hotSpotDebug": true,
-        // "pitch": -45,
         "showZoomCtrl": false,
         "keyboardZoom": false,
         "mouseZoom": false,
-        // "hfov": 110,
+        "autoLoad": true,
         "hfov": 100,
     },
 
