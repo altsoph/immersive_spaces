@@ -1,4 +1,4 @@
-This page contains supplementary demos for our paper "[Unrolling Virtual Worlds for Immersive Experiences](#)" accepted for [NeurIPS 2023 Workshop on Machine Learning for Creativity and Design](https://nips.cc/virtual/2023/workshop/66545).
+This page contains supplementary demos for our paper "Unrolling Virtual Worlds for Immersive Experiences" ([paper](https://altsoph.com/papers/UVWIE_paper.pdf), [poster](https://altsoph.com/papers/UVWIE_poster.pdf)) presented at [NeurIPS 2023 Workshop on Machine Learning for Creativity and Design](https://nips.cc/virtual/2023/workshop/66545).
 We explore the idea of generation of navigable 3D worlds using the combination of modern neural networks and specific geometric transformations to achieve interactive, locally coherent worlds.
 
 First, we utilize the fine-tuned [StableDiffusion v1.5 model](https://huggingface.co/runwayml/stable-diffusion-v1-5) to generate panoramas in equirectangular projection, similar to [BlockadeLabs](https://www.blockadelabs.com/) and [latentlabs360](https://civitai.com/models/10753/latentlabs360).
